@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELEV8 Festival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#setlist">Setlist</a></li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <div id="home" class="header-container revealable">
+        <img id="header-img" src="img/ELEV8-Logo.png" alt="ELEV8 logo">
+
+        <div class="header-text">
+            <h1>ELEV8 Festival</h1>
+            <h2>Where the Vibes Take You Higher</h2>
+            <div class="header-actions">
+                <button class="header-button" type="button">Buy Tickets</button>
+                <button class="header-button" type="button">View Lineup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <h2 id="about" class="revealable">About the Event</h2>
+    <p class="revealable">
+        ELEV8 Festival brings a one of a kind experience of house music, designed to bring people together in an unforgettable elevated atmosphere. With incredible beats, light shows, and a lineup of talented DJs, ELEV8 creates a space where young adults and house music lovers experience more than a party. The music unites everyone bringing the night vibes higher.
+    </p>
+
+    <!-- Embedded Video -->
+    <iframe class="revealable" width="560" height="315" 
+        src="https://www.youtube.com/embed/7bBd8A27jhY?si=zWM-KvjbzWm65I79" 
+        title="ELEV8 Festival Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <!-- Schedule -->
+    <h2 id="schedule" class="revealable">Event Schedule</h2>
+    <div class="schedule-container revealable">
+        <article class="schedule-item">
+            <img src="img/festival.png" alt="Opening DJ set">
+            <h3>Opening DJ Set</h3>
+            <p>The festival begins with an energetic Opening DJ set designed to set the tone for the night. This performance will welcome guests, create excitement, and build the atmosphere with house beats.</p>
+        </article>
+
+        <article class="schedule-item">
+            <img src="img/finale.png" alt="Grand Finale">
+            <h3>Grand Finale</h3>
+            <p>This final performance unites the crowd one last time with unforgettable house beats, dazzling lights, and an atmosphere of pure celebration.</p>
+        </article>
+    </div>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="revealable">
+        <h2>RSVP</h2>
+
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <p>Join us for the ultimate house music experience! Let us know if you'll be attending ELEV8 Festival.</p>
+            </div>
+
+            <div class="rsvp-participants">
+                <p>🎟️ Alex from Florida has RSVP'd.</p>
+                <p>🎟️ Mia from California has RSVP'd.</p>
+                <p>🎟️ Jordan from New York has RSVP'd.</p>
+            </div>
+        </div>
+
+        <!-- RSVP Form -->
+        <form id="rsvp-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="state">Home State:</label>
+            <input type="text" id="state" name="state" placeholder="Enter your state" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <button type="button" id="rsvp-button">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- Setlist -->
+    <h2 id="setlist" class="revealable">Setlist</h2>
+    <iframe class="revealable" style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/6tDBMuvQIjN3Hw1FFQAWJV?utm_source=generator"
+        width="100%" height="352" frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <!-- success modal
+
+    Purpose:
+    - Modal that appears when a user successfully signs up for the event
+    - Contains a personalized message and image
+
+    When To Modify:
+    - [ ] Project 9 (REQUIRED FEATURE)
+    - [ ] Project 9 (STRETCH FEATURE)
+    - [ ] Any time after
+    -->
+<!-- success modal -->
+<div id="success-modal" class="modal">
+  <div class="modal-container">
+    <div id="modal-item-text" class="modal-item">
+      <p id="modal-text">
+        Mission Status: ✅ ACCEPTED<br><br>
+        Welcome to ELEV8 Festival!
+      </p>
+    </div>
+
+    <div id="modal-item-image" class="modal-item">
+      <img id="modal-image" src="img/dj.png" alt="DJ illustration">
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
